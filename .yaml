@@ -1,0 +1,19 @@
+name: support-ticket-env
+version: 1.0
+description: Customer support AI environment
+
+observation_space:
+  ticket: string
+  conversation_history: list
+  status: string
+
+action_space:
+  action_type: string
+  content: string
+
+reward_range: [0.0, 1.0]
+
+tasks:
+  - easy
+  - medium
+  - hard
